@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("peakpx.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.all-song-div,
+.card-div,
+.playlist-div {
+    width: 30%;
+}
+
+/* Add your styles for dark and light themes here */
+[data-theme="dark"] {
+    /* Add dark theme styles */
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Add more styles as needed */
+
+.theme-div {
+    margin-top: 10px;
+}

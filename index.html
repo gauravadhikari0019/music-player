@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="background">
+    </div>
+    
+    <div class="heading">
+        <h1>Music Player</h1>
+        <div class="theme-div">
+            <label for="themeToggle">Choose Theme:</label>
+            <select id="themeToggle" onchange="toggleTheme()">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div class="all-song-div">
+            <audio controls>
+                <source src="Ellie Goulding - Love Me Like You Do (Lyrics).mp3" type="audio/mp3">Play Song</button>
+            </audio>
+             <h2>All Songs</h2>
+            <label for="genreFilter">Filter by Genre:</label>
+            <select id="genreFilter" onchange="showSongs()">
+                <option value="all">All Genres</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <!-- Add more genres as needed -->
+            </select>
+            <ul id="songList"></ul>
+        </div>
+        <div class="card-div">
+            <h2>Song Card</h2>
+            <div id="songCard">
+                <!-- Song information will be displayed here -->
+            </div>
+            <button onclick="playPrevious()">Previous</button>
+            <button onclick="playNext()">Next</button>
+            <button onclick="addToPlaylist()">Add to Playlist</button>
+        </div>
+        <div class="playlist-div">
+            <h2>Playlists</h2>
+            <button onclick="createPlaylist()">Create Playlist</button>
+            <ul id="playlistList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
